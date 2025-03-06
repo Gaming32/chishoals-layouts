@@ -145,9 +145,6 @@
 })({"9dx5I":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-//Theme:
-//#f04888
-//#eae6f3
 parcelHelpers.export(exports, "Intermission", ()=>Intermission);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -180,49 +177,49 @@ function Intermission() {
     return /*#__PURE__*/ (0, _reactDefault.default).createElement(StyledIntermission, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 30,
+            lineNumber: 26,
             columnNumber: 3
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _background.Background), {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 31,
+            lineNumber: 27,
             columnNumber: 4
         },
         __self: this
     }), /*#__PURE__*/ (0, _reactDefault.default).createElement(Content, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 32,
+            lineNumber: 28,
             columnNumber: 4
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement(TopRow, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 33,
+            lineNumber: 29,
             columnNumber: 5
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement(LargeFeed, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 34,
+            lineNumber: 30,
             columnNumber: 6
         },
         __self: this
     }), /*#__PURE__*/ (0, _reactDefault.default).createElement(LargeFeed, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 35,
+            lineNumber: 31,
             columnNumber: 6
         },
         __self: this
     })), /*#__PURE__*/ (0, _reactDefault.default).createElement(MiddleRow, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 37,
+            lineNumber: 33,
             columnNumber: 5
         },
         __self: this
@@ -232,14 +229,14 @@ function Intermission() {
         left: true,
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 38,
+            lineNumber: 34,
             columnNumber: 6
         },
         __self: this
     }), /*#__PURE__*/ (0, _reactDefault.default).createElement(SmallFeed, {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 39,
+            lineNumber: 35,
             columnNumber: 6
         },
         __self: this
@@ -249,14 +246,14 @@ function Intermission() {
         left: false,
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 40,
+            lineNumber: 36,
             columnNumber: 6
         },
         __self: this
     })), /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _omnibar.Omnibar), {
         __source: {
             fileName: "src/graphics/Intermission.tsx",
-            lineNumber: 42,
+            lineNumber: 38,
             columnNumber: 5
         },
         __self: this
@@ -296,16 +293,16 @@ const LargeFeed = (0, _styledComponentsDefault.default).div`
 	aspect-ratio: 16/9;
 	box-sizing: content-box;
 
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 `;
 const SmallFeed = (0, _styledComponentsDefault.default).div`
 	height: 360px;
 	aspect-ratio: 16/9;
 	box-sizing: content-box;
 
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 `;
 const ScoreBox = (0, _styledComponentsDefault.default).div`
 	display: flex;
@@ -316,9 +313,9 @@ const ScoreBox = (0, _styledComponentsDefault.default).div`
 	height: 5rem;
 	width: 100%;
 	font-size: 3rem;
-	color: #f04888;
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	color: var(--theme-fg);
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 	box-sizing: content-box;
 `;
 const StyledFittedText = (0, _styledComponentsDefault.default)((0, _fittedText.FittedText))`
@@ -328,7 +325,7 @@ const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _reactDefault.default).createElement(Intermission, {
     __source: {
         fileName: "src/graphics/Intermission.tsx",
-        lineNumber: 119,
+        lineNumber: 115,
         columnNumber: 13
     },
     __self: undefined
@@ -617,7 +614,7 @@ const OmnibarWrapper = (0, _styledComponentsDefault.default).div`
   	display: flex;
   	flex-direction: row;
   	width: calc(100% - 40px);
-  	background-color: #f04888;
+  	background-color: var(--theme-fg);
   	height: 122px;
   	margin: 10px 20px;
 `;
@@ -633,7 +630,7 @@ const OmnibarElement = (0, _styledComponentsDefault.default).div`
 	padding: 10px;
 	color: #ffffff;
 	font-size: 20pt;
-	border-right: ${(props)=>props.$border ? "5px solid #eae6f3" : ""};
+	border-right: ${(props)=>props.$border ? "5px solid var(--theme-bg)" : ""};
 `;
 const TimeDate = (0, _styledComponentsDefault.default)(OmnibarElement)`
 	position: relative;
@@ -852,7 +849,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styledComponents = require("styled-components");
 var _styledComponentsDefault = parcelHelpers.interopDefault(_styledComponents);
 const BACKGROUND_PATH = "/bundles/chishoals-layouts/images/backgrounds";
-const DEFAULT_COLOR = "#eae6f3";
+const DEFAULT_COLOR = "var(--theme-bg)";
 const BACKGROUND_CATS = [
     {
         weight: 0.7,
@@ -965,7 +962,7 @@ const StyledBackground = (0, _styledComponentsDefault.default).div`
 	background-image: url(${(props)=>props.src});
 	background-color: ${({ $backgroundColor })=>$backgroundColor};
 	background-attachment: scroll;
-	
+
     animation: scrolling 90s linear infinite;
 
 	@keyframes scrolling {
@@ -1044,9 +1041,9 @@ const TeamAndScore = (0, _styledComponentsDefault.default).div`
 	height: 5rem;
 	width: 100%;
 	font-size: 3rem;
-	color: #f04888;
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	color: var(--theme-fg);
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 	box-sizing: content-box;
 `;
 const TeamBox = (0, _styledComponentsDefault.default).div`
@@ -1063,8 +1060,8 @@ const ScoreBox = (0, _styledComponentsDefault.default).div`
 
 	font-size: 5rem;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 `;
 
 },{"react":"bH1AQ","styled-components":"9xpRL","./FittedText":"f5NVk","@parcel/transformer-js/src/esmodule-helpers.js":"hvLRG"}],"f5NVk":[function(require,module,exports) {

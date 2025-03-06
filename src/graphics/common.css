@@ -1,3 +1,8 @@
+:root {
+    --theme-fg: #f04888;
+    --theme-bg: #eae6f3;
+}
+
 @font-face {
     font-family: MainFont;
     src: url('../../fonts/Saira_Condensed-Bold.ttf');

@@ -7,7 +7,7 @@ interface BackgroundProps
 }
 
 const BACKGROUND_PATH = '/bundles/chishoals-layouts/images/backgrounds';
-const DEFAULT_COLOR = "#eae6f3";
+const DEFAULT_COLOR = "var(--theme-bg)";
 
 //Weights should add up to 1
 type Category = { weight: number, backgrounds: Background[] };
@@ -63,8 +63,8 @@ export const Background: React.FC<BackgroundProps> = ({ backgroundColor }) => {
 	const [randomBackground] = useState<Background>(GetRandomBackground())
 
 	return (
-		<StyledBackground 
-		$backgroundColor={backgroundColor ? backgroundColor : DEFAULT_COLOR} 
+		<StyledBackground
+		$backgroundColor={backgroundColor ? backgroundColor : DEFAULT_COLOR}
 		src={`${BACKGROUND_PATH}/${randomBackground.image}`}
 		$size={randomBackground.size}/>
 	);
@@ -81,7 +81,7 @@ const StyledBackground = styled.div<{$backgroundColor: string, src: string, $siz
 	background-image: url(${props => props.src});
 	background-color: ${({ $backgroundColor }) => $backgroundColor};
 	background-attachment: scroll;
-	
+
     animation: scrolling 90s linear infinite;
 
 	@keyframes scrolling {

@@ -37,10 +37,10 @@ const TeamAndScore = styled.div`
 	height: 3rem;
 	width: 100%;
 	font-size: 2rem;
-	color: #f04888;
+	color: var(--theme-fg);
 	border: 3px solid #b31451;
 	border-radius: 0.5rem;
-	background-color: #eae6f3;
+	background-color: var(--theme-bg);
 	//box-sizing: content-box;
 `;
 
@@ -75,8 +75,8 @@ const ScoreBox = styled.div<{ $width: number }>`
 
 	font-size: 3rem;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 	border-left: 4px solid #b31451;
 	border-radius: 0 4px 4px 0;
 `;

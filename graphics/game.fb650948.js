@@ -367,8 +367,8 @@ const InfoBox = (0, _styledComponentsDefault.default).div`
 	font-size: 2rem;
 	padding: 0 5px;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 	border: 3px solid #b31451;
 	border-radius: 0.5rem;
 `;
@@ -517,10 +517,10 @@ const TeamAndScore = (0, _styledComponentsDefault.default).div`
 	height: 3rem;
 	width: 100%;
 	font-size: 2rem;
-	color: #f04888;
+	color: var(--theme-fg);
 	border: 3px solid #b31451;
 	border-radius: 0.5rem;
-	background-color: #eae6f3;
+	background-color: var(--theme-bg);
 	//box-sizing: content-box;
 `;
 const TeamBox = (0, _styledComponentsDefault.default).div`
@@ -552,8 +552,8 @@ const ScoreBox = (0, _styledComponentsDefault.default).div`
 
 	font-size: 3rem;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 	border-left: 4px solid #b31451;
 	border-radius: 0 4px 4px 0;
 `;
@@ -886,8 +886,8 @@ const CommentatorBox = (0, _styledComponents.styled).div`
 	height: 3rem;
 	font-size: 2rem;
 
-	color: #f04888;
-	background-color: #eae6f3;
+	color: var(--theme-fg);
+	background-color: var(--theme-bg);
 	border: 3px solid #b31451;
 	border-radius: 0.5rem;
 `;
@@ -904,8 +904,8 @@ const CommentatorPronouns = (0, _styledComponents.styled).div`
 	height: 100%;
 	font-size: 1.5rem;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 	border-left: 4px solid #b31451;
 	border-radius: 0 4px 4px 0;
 `;

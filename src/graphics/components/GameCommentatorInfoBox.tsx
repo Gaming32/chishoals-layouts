@@ -42,8 +42,8 @@ const CommentatorBox = styled.div`
 	height: 3rem;
 	font-size: 2rem;
 
-	color: #f04888;
-	background-color: #eae6f3;
+	color: var(--theme-fg);
+	background-color: var(--theme-bg);
 	border: 3px solid #b31451;
 	border-radius: 0.5rem;
 `;
@@ -62,8 +62,8 @@ const CommentatorPronouns = styled.div`
 	height: 100%;
 	font-size: 1.5rem;
 
-	color: #eae6f3;
-	background-color: #f04888;
+	color: var(--theme-bg);
+	background-color: var(--theme-fg);
 	border-left: 4px solid #b31451;
 	border-radius: 0 4px 4px 0;
 `;

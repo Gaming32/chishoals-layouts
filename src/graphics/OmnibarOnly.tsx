@@ -4,10 +4,6 @@ import { createRoot } from 'react-dom/client';
 import { Omnibar } from './components/Omnibar';
 import { Background } from './components/Background';
 
-//Theme:
-//#f04888
-//#eae6f3
-
 export function OmnibarOnly() {
 	return (
 		<StyledOmnibarOnly>
@@ -31,7 +27,7 @@ const Content = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	
+
 	width: 100%;
 	height: 100%;
 `;

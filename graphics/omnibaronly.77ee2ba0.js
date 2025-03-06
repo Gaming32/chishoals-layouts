@@ -145,9 +145,6 @@
 })({"ahfx7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-//Theme:
-//#f04888
-//#eae6f3
 parcelHelpers.export(exports, "OmnibarOnly", ()=>OmnibarOnly);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -159,21 +156,21 @@ function OmnibarOnly() {
     return /*#__PURE__*/ (0, _reactDefault.default).createElement(StyledOmnibarOnly, {
         __source: {
             fileName: "src/graphics/OmnibarOnly.tsx",
-            lineNumber: 13,
+            lineNumber: 9,
             columnNumber: 3
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement(Content, {
         __source: {
             fileName: "src/graphics/OmnibarOnly.tsx",
-            lineNumber: 14,
+            lineNumber: 10,
             columnNumber: 4
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _omnibar.Omnibar), {
         __source: {
             fileName: "src/graphics/OmnibarOnly.tsx",
-            lineNumber: 15,
+            lineNumber: 11,
             columnNumber: 5
         },
         __self: this
@@ -191,7 +188,7 @@ const Content = (0, _styledComponentsDefault.default).div`
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	
+
 	width: 100%;
 	height: 100%;
 `;
@@ -199,7 +196,7 @@ const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _reactDefault.default).createElement(OmnibarOnly, {
     __source: {
         fileName: "src/graphics/OmnibarOnly.tsx",
-        lineNumber: 40,
+        lineNumber: 36,
         columnNumber: 13
     },
     __self: undefined
@@ -488,7 +485,7 @@ const OmnibarWrapper = (0, _styledComponentsDefault.default).div`
   	display: flex;
   	flex-direction: row;
   	width: calc(100% - 40px);
-  	background-color: #f04888;
+  	background-color: var(--theme-fg);
   	height: 122px;
   	margin: 10px 20px;
 `;
@@ -504,7 +501,7 @@ const OmnibarElement = (0, _styledComponentsDefault.default).div`
 	padding: 10px;
 	color: #ffffff;
 	font-size: 20pt;
-	border-right: ${(props)=>props.$border ? "5px solid #eae6f3" : ""};
+	border-right: ${(props)=>props.$border ? "5px solid var(--theme-bg)" : ""};
 `;
 const TimeDate = (0, _styledComponentsDefault.default)(OmnibarElement)`
 	position: relative;

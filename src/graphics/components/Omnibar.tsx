@@ -101,7 +101,7 @@ const OmnibarWrapper = styled.div`
   	display: flex;
   	flex-direction: row;
   	width: calc(100% - 40px);
-  	background-color: #f04888;
+  	background-color: var(--theme-fg);
   	height: 122px;
   	margin: 10px 20px;
 `;
@@ -120,7 +120,7 @@ const OmnibarElement = styled.div<{$border?: boolean}>`
 	padding: 10px;
 	color: #ffffff;
 	font-size: 20pt;
-	border-right: ${props => props.$border ? '5px solid #eae6f3' : ''};
+	border-right: ${props => props.$border ? '5px solid var(--theme-bg)' : ''};
 `;
 
 const TimeDate = styled(OmnibarElement)`

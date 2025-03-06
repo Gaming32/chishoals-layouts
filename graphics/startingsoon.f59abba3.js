@@ -452,7 +452,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styledComponents = require("styled-components");
 var _styledComponentsDefault = parcelHelpers.interopDefault(_styledComponents);
 const BACKGROUND_PATH = "/bundles/chishoals-layouts/images/backgrounds";
-const DEFAULT_COLOR = "#eae6f3";
+const DEFAULT_COLOR = "var(--theme-bg)";
 const BACKGROUND_CATS = [
     {
         weight: 0.7,
@@ -565,7 +565,7 @@ const StyledBackground = (0, _styledComponentsDefault.default).div`
 	background-image: url(${(props)=>props.src});
 	background-color: ${({ $backgroundColor })=>$backgroundColor};
 	background-attachment: scroll;
-	
+
     animation: scrolling 90s linear infinite;
 
 	@keyframes scrolling {

@@ -8,14 +8,10 @@ import { Background } from './components/Background';
 import { TeamScoreBox } from './components/TeamScoreBox';
 import { FittedText } from './components/FittedText';
 
-//Theme:
-//#f04888
-//#eae6f3
-
 export function Intermission() {
-	const [matchData, setMatchData] = useReplicant<MatchData>('match', { 
+	const [matchData, setMatchData] = useReplicant<MatchData>('match', {
 		bundle: 'squidwest-layout-controls',
-		defaultValue: { 
+		defaultValue: {
 			matchInfo: "Round 1",
 			teamA: "Team A",
 			teamB: "Team B",
@@ -83,8 +79,8 @@ const LargeFeed = styled.div`
 	aspect-ratio: 16/9;
 	box-sizing: content-box;
 
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 `;
 
 const SmallFeed = styled.div`
@@ -92,8 +88,8 @@ const SmallFeed = styled.div`
 	aspect-ratio: 16/9;
 	box-sizing: content-box;
 
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 `;
 
 const ScoreBox = styled.div`
@@ -105,9 +101,9 @@ const ScoreBox = styled.div`
 	height: 5rem;
 	width: 100%;
 	font-size: 3rem;
-	color: #f04888;
-	border: 8px solid #f04888;
-	background-color: #eae6f3;
+	color: var(--theme-fg);
+	border: 8px solid var(--theme-fg);
+	background-color: var(--theme-bg);
 	box-sizing: content-box;
 `;
 

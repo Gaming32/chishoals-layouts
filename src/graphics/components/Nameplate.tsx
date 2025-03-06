@@ -179,7 +179,7 @@ const Pronouns = styled.div`
 	background-image: url('/bundles/chishoals-layouts/images/Splatter.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	color: #eae6f3;
+	color: var(--theme-bg);
 	font-size: 1.6rem;
 `;
 
