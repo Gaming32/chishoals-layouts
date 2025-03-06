@@ -48,7 +48,7 @@ export const Omnibar: React.FC = () => {
 			</OmnibarItem>
 			<OmnibarItem $show={intermissionData ? intermissionData.showEvent : true}>
 				<EventSection $border={true}>
-					<Logo src='/bundles/chishoals-layouts/images/SWBNW.png' alt="Chi-Shoals Logo" />
+					<Logo src='/bundles/chishoals-layouts/images/SquidWakeeLogoBNW.png' alt="Squid-Waukee Logo" />
 					{currentEvent.number > 0 && (
 					<EventNumberText>
             	    	#{currentEvent.number}

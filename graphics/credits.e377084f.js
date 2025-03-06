@@ -370,7 +370,7 @@ function Credits() {
         },
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement(Logo, {
-        src: "/bundles/chishoals-layouts/images/logo_Base.png",
+        src: "/bundles/chishoals-layouts/images/SquidWaukeeLogo.png",
         __source: {
             fileName: "src/graphics/Credits.tsx",
             lineNumber: 79,
@@ -557,7 +557,7 @@ function Credits() {
         },
         __self: this
     }, "GameTogetherMKE Staff"), /*#__PURE__*/ (0, _reactDefault.default).createElement(LibraryLogo, {
-        src: "/bundles/chishoals-layouts/images/BUYSELLPLAYLOGO1.jpg",
+        src: "/bundles/chishoals-layouts/images/GameTogetherMKELogo.jpg",
         __source: {
             fileName: "src/graphics/Credits.tsx",
             lineNumber: 115,

@@ -76,7 +76,7 @@ export function Credits() {
                     </CreditsRow>}
                     {(headTO.length > 0 || poolCaptains.length > 0) && <CreditsRow>
                         <LogoRow>
-                            <Logo src="/bundles/chishoals-layouts/images/logo_Base.png" />
+                            <Logo src="/bundles/chishoals-layouts/images/SquidWaukeeLogo.png" />
                         </LogoRow>
                         <CreditsColumns>
                             {headTO.length > 0 && <Rows>
@@ -112,7 +112,7 @@ export function Credits() {
                     <CreditsRow>
                         <LogoRow>
                             <LibraryText>GameTogetherMKE Staff</LibraryText>
-                            <LibraryLogo src="/bundles/chishoals-layouts/images/BUYSELLPLAYLOGO1.jpg" />
+                            <LibraryLogo src="/bundles/chishoals-layouts/images/GameTogetherMKELogo.jpg" />
                         </LogoRow>
                         <NameText>Location and support</NameText>
                     </CreditsRow>
