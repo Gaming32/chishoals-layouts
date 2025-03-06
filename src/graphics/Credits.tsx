@@ -32,7 +32,7 @@ export function Credits() {
 
     useEffect(() => {
 		if(!creditsData) return;
-   
+
 		setSetupTeam(creditsData.setupTeam);
 		setCommentaryTeam(creditsData.commentaryTeam);
 		setTechTeam(creditsData.techTeam);
@@ -76,7 +76,7 @@ export function Credits() {
                     </CreditsRow>}
                     {(headTO.length > 0 || poolCaptains.length > 0) && <CreditsRow>
                         <LogoRow>
-                            <Logo src="/bundles/chishoals-layouts/images/Chi-Shoals_Logo_Transparent_Green.png" />
+                            <Logo src="/bundles/chishoals-layouts/images/logo_Base.png" />
                         </LogoRow>
                         <CreditsColumns>
                             {headTO.length > 0 && <Rows>
@@ -111,15 +111,8 @@ export function Credits() {
                     </CreditsRow>
                     <CreditsRow>
                         <LogoRow>
-                            <HeaderText>I Play Games!</HeaderText>
-                            <IPGLogo src="/bundles/chishoals-layouts/images/I_Play_Games.png" />
-                        </LogoRow>
-                        <NameText>Equipment, support, and collaboration</NameText>
-                    </CreditsRow>
-                    <CreditsRow>
-                        <LogoRow>
-                            <LibraryText>Harold Washington Library Staff</LibraryText>
-                            <LibraryLogo src="/bundles/chishoals-layouts/images/CPL_Logo.png" />
+                            <LibraryText>GameTogetherMKE Staff</LibraryText>
+                            <LibraryLogo src="/bundles/chishoals-layouts/images/BUYSELLPLAYLOGO1.jpg" />
                         </LogoRow>
                         <NameText>Location and support</NameText>
                     </CreditsRow>
@@ -157,7 +150,7 @@ const Content = styled.div`
     height: 100%;
 
     color: #ffffff;
-    background-color: #000000;
+    background-color: #231d1f;
 
     overflow: hidden;
 `;

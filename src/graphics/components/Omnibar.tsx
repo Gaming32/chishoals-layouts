@@ -16,14 +16,14 @@ export const Omnibar: React.FC = () => {
 
 	useEffect(() => {
 		if(!eventData) return;
-   
+
 		setCurrentEvent(eventData.currentEvent);
 	}, [eventData]);
 
     const [time, setTime] = useState(new Date());
 
 	useEffect(() => {
-		const interval = setInterval(() => { 
+		const interval = setInterval(() => {
 			setTime(new Date());
 		}, 1000);
 
@@ -48,7 +48,7 @@ export const Omnibar: React.FC = () => {
 			</OmnibarItem>
 			<OmnibarItem $show={intermissionData ? intermissionData.showEvent : true}>
 				<EventSection $border={true}>
-					<Logo src='/bundles/chishoals-layouts/images/Chi-Shoals_Logo_Transparent.png' alt="Chi-Shoals Logo" />
+					<Logo src='/bundles/chishoals-layouts/images/SWBNW.png' alt="Chi-Shoals Logo" />
 					{currentEvent.number > 0 && (
 					<EventNumberText>
             	    	#{currentEvent.number}

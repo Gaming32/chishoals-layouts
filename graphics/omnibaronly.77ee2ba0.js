@@ -307,7 +307,7 @@ const Omnibar = ()=>{
         },
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement(Logo, {
-        src: "/bundles/chishoals-layouts/images/Chi-Shoals_Logo_Transparent.png",
+        src: "/bundles/chishoals-layouts/images/SWBNW.png",
         alt: "Chi-Shoals Logo",
         __source: {
             fileName: "src/graphics/components/Omnibar.tsx",

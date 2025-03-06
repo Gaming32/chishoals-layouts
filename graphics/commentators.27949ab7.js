@@ -559,7 +559,7 @@ const Tag = (0, _styledComponentsDefault.default).div`
 const PronounsText = (0, _styledComponentsDefault.default).div`
 `;
 
-},{"styled-components":"9xpRL","react":"bH1AQ","@parcel/transformer-js/src/esmodule-helpers.js":"hvLRG","./FittedText":"f5NVk"}],"f5NVk":[function(require,module,exports) {
+},{"styled-components":"9xpRL","react":"bH1AQ","./FittedText":"f5NVk","@parcel/transformer-js/src/esmodule-helpers.js":"hvLRG"}],"f5NVk":[function(require,module,exports) {
 /**
  * Horizontally squishes text within a max width
  * 
