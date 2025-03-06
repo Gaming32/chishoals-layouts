@@ -663,7 +663,7 @@ const Content = (0, _styledComponentsDefault.default).div`
     height: 100%;
 
     color: #ffffff;
-    background-color: #231d1f;
+    background-color: #000000;
 
     overflow: hidden;
 `;
