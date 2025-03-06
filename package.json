@@ -98,6 +98,7 @@
     "@phosphor-icons/react": "^2.0.15",
     "@types/react": "*",
     "@types/react-dom": "*",
+    "chishoals-layouts": "file:",
     "fitted-text": "^2.0.5",
     "fontfaceobserver": "^2.3.0",
     "react": "*",
