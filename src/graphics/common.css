@@ -1,0 +1,27 @@
+@font-face {
+    font-family: MainFont;
+    src: url('../../fonts/Saira_Condensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: BrbFont;
+    src: url('../../fonts/Saira_ExtraCondensed-ExtraBoldItalic.ttf');
+    font-weight: bolder;
+}
+
+body {
+    font-family: MainFont;
+    margin: 0;
+}
+
+body.brb-font {
+    font-family: BrbFont;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+* {
+    box-sizing: border-box;
+}

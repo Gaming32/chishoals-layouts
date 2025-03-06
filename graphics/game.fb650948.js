@@ -260,7 +260,7 @@ function Game() {
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: `${currentEvent.name} ${currentEvent.number > 0 ? "#" + currentEvent.number : ""}${matchData.matchInfo !== "" ? " - " + matchData.matchInfo : ""}`,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: FullWidth,
         __source: {
@@ -310,7 +310,7 @@ function Game() {
         __self: this
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: "Commentary",
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: FullWidth,
         __source: {
@@ -375,7 +375,7 @@ const InfoBox = (0, _styledComponentsDefault.default).div`
 const Scoreboard = (0, _styledComponentsDefault.default).div`
 	position: relative;
 	opacity: ${({ $show })=>$show ? 1 : 0};
-	
+
 	transition: opacity 0.75s ease;
 `;
 const Commentators = (0, _styledComponentsDefault.default).div`
@@ -383,8 +383,8 @@ const Commentators = (0, _styledComponentsDefault.default).div`
 
 	position: relative;
 	opacity: ${({ $show })=>$show ? 1 : 0};
-	
-	transition: opacity 0.75s ease;	
+
+	transition: opacity 0.75s ease;
 `;
 const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _reactDefault.default).createElement(Game, {
@@ -478,7 +478,7 @@ const GameScoreInfoBox = ({ team, score, color, mainWidth, secondaryWidth })=>{
         __self: undefined
     }), /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: team,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: mainWidth - paddingWidth - colorDisplayWidth - colorMargin,
         __source: {
@@ -497,7 +497,7 @@ const GameScoreInfoBox = ({ team, score, color, mainWidth, secondaryWidth })=>{
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: `${score}`,
-        font: "Splatoon",
+        font: "MainFont",
         align: "center",
         maxWidth: secondaryWidth - 5,
         __source: {
@@ -539,7 +539,7 @@ const ColorDisplay = (0, _styledComponentsDefault.default).div`
 	min-width: ${colorDisplayWidth}px;
 	margin-right: ${colorMargin}px;
 	height: 100%;
-	
+
 	border-radius: 5px;
 	background-color: ${({ $color })=>$color};
 `;
@@ -835,7 +835,7 @@ const GameCommentatorInfoBox = ({ name, tag, pronouns, playing, fullWidth, nameW
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: name,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: pronouns !== "" ? nameWidth : fullWidth,
         __source: {
@@ -846,7 +846,7 @@ const GameCommentatorInfoBox = ({ name, tag, pronouns, playing, fullWidth, nameW
         __self: undefined
     }), tag !== "" && /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: tag,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: pronouns !== "" ? nameWidth : fullWidth,
         __source: {
@@ -864,7 +864,7 @@ const GameCommentatorInfoBox = ({ name, tag, pronouns, playing, fullWidth, nameW
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: pronouns,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: pronounsWidth,
         __source: {

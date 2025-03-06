@@ -399,7 +399,7 @@ const Nameplate = ({ show, name, pronouns, tag, animationLength })=>{
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: name,
-        font: "Splatoon",
+        font: "MainFont",
         align: "center",
         maxWidth: 580,
         __source: {
@@ -417,7 +417,7 @@ const Nameplate = ({ show, name, pronouns, tag, animationLength })=>{
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: tag,
-        font: "Splatoon",
+        font: "MainFont",
         align: "left",
         maxWidth: 500,
         __source: {
@@ -444,7 +444,7 @@ const Nameplate = ({ show, name, pronouns, tag, animationLength })=>{
             __self: undefined
         }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
             text: item,
-            font: "Splatoon",
+            font: "MainFont",
             align: "center",
             maxWidth: 75,
             __source: {
@@ -537,7 +537,7 @@ const Pronouns = (0, _styledComponentsDefault.default).div`
 
 	bottom: -50px;
 	right: -80px;
-	
+
 	justify-content: center;
 	align-items: center;
 

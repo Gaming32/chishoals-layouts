@@ -9,7 +9,7 @@ import { FittedText } from './components/FittedText';
 import { CarouselComponent } from './components/CarouselComponent';
 import { GameCommentatorInfoBox } from './components/GameCommentatorInfoBox';
 
-const defaultMatchData: MatchData = { 
+const defaultMatchData: MatchData = {
 	matchInfo: "Round 1",
 	teamA: "Team A",
 	teamB: "Team B",
@@ -34,8 +34,8 @@ export function Game() {
 
 	const [comms] = useReplicant<CommentatorData>('commentators', {
 		bundle: 'squidwest-layout-controls',
-		defaultValue: { 
-			commentatorOne: defaultCommentator, 
+		defaultValue: {
+			commentatorOne: defaultCommentator,
 			commentatorTwo: defaultCommentator,
 			autoShow: true,
 			delay: 3000,
@@ -77,18 +77,18 @@ export function Game() {
 			<Content>
 				<Scoreboard $show={showScoreboard}>
 					<InfoBox>
-						<FittedText text={`${currentEvent.name} ${currentEvent.number > 0 ? '#' + currentEvent.number  : ''}${matchData.matchInfo !== "" ? " - " + matchData.matchInfo : ""}`} font="Splatoon" align="left" maxWidth={FullWidth} />
+						<FittedText text={`${currentEvent.name} ${currentEvent.number > 0 ? '#' + currentEvent.number  : ''}${matchData.matchInfo !== "" ? " - " + matchData.matchInfo : ""}`} font="MainFont" align="left" maxWidth={FullWidth} />
 					</InfoBox>
-					<GameScoreInfoBox 
-						color={!matchData.swapColor ? matchData.matchColor.teamA : matchData.matchColor.teamB} 
-						team={matchData.teamA || ""} 
+					<GameScoreInfoBox
+						color={!matchData.swapColor ? matchData.matchColor.teamA : matchData.matchColor.teamB}
+						team={matchData.teamA || ""}
 						score={matchData.scoreA || 0}
 						mainWidth={TeamWidth}
 						secondaryWidth={ScoreWidth}
 					/>
-					<GameScoreInfoBox 
-						color={matchData.swapColor ? matchData.matchColor.teamA : matchData.matchColor.teamB} 
-						team={matchData.teamB || ""} 
+					<GameScoreInfoBox
+						color={matchData.swapColor ? matchData.matchColor.teamA : matchData.matchColor.teamB}
+						team={matchData.teamB || ""}
 						score={matchData.scoreB || 0}
 						mainWidth={TeamWidth}
 						secondaryWidth={ScoreWidth}
@@ -96,7 +96,7 @@ export function Game() {
 				</Scoreboard>
 				<Commentators $show={showCommentary}>
 					<InfoBox>
-						<FittedText text="Commentary" font="Splatoon" align="left" maxWidth={FullWidth} />
+						<FittedText text="Commentary" font="MainFont" align="left" maxWidth={FullWidth} />
 					</InfoBox>
 					<GameCommentatorInfoBox
 						name={commentatorOne.name}
@@ -107,7 +107,7 @@ export function Game() {
 						nameWidth={CommentatorWidth}
 						pronounsWidth={PronounsWidth}
 					/>
-					<GameCommentatorInfoBox 
+					<GameCommentatorInfoBox
 						name={commentatorTwo.name}
 						pronouns={commentatorTwo.pronouns}
 						tag={commentatorTwo.tag}
@@ -151,7 +151,7 @@ const InfoBox = styled.div`
 const Scoreboard = styled.div<{ $show: boolean }>`
 	position: relative;
 	opacity: ${({ $show }) => $show ? 1 : 0};
-	
+
 	transition: opacity 0.75s ease;
 `;
 
@@ -160,8 +160,8 @@ const Commentators = styled.div<{ $show: boolean }>`
 
 	position: relative;
 	opacity: ${({ $show }) => $show ? 1 : 0};
-	
-	transition: opacity 0.75s ease;	
+
+	transition: opacity 0.75s ease;
 `;
 
 const root = createRoot(document.getElementById('root')!);

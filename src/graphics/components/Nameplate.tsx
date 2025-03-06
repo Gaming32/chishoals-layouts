@@ -14,7 +14,7 @@ export const Nameplate: React.FC<NameplateProps> = ({ show, name, pronouns, tag,
 
 	const [ visible, setVisible ] = useState<boolean>(false);
 	const [ active, setActive ] = useState<boolean>(false);
-	
+
 	let onAnimEnd = useCallback((animName: string) => {
 		if(animName === ShowNameplate.getName()) {
 			if(!show) {
@@ -57,21 +57,21 @@ export const Nameplate: React.FC<NameplateProps> = ({ show, name, pronouns, tag,
 		<NameplateBox
 		$show={show}
 		$visible={visible}
-		$active={active} 
+		$active={active}
 		$animLength={animationLength || 1000}
 		onAnimationEnd={(event) => { onAnimEnd(event.animationName); }}>
 			<Name>
-				<FittedText text={name} font="Splatoon" align="center" maxWidth={580}  />
+				<FittedText text={name} font="MainFont" align="center" maxWidth={580}  />
 			</Name>
 			<Tag>
-				<FittedText text={tag} font="Splatoon" align="left" maxWidth={500}  />
+				<FittedText text={tag} font="MainFont" align="left" maxWidth={500}  />
 			</Tag>
 			{pronouns !== "" && (
 			<Pronouns>
 			{
 				pronounsSplit.map((item, index) => {
 					return <PronounsText key={index}>
-						<FittedText text={item} font="Splatoon" align="center" maxWidth={75}  />
+						<FittedText text={item} font="MainFont" align="center" maxWidth={75}  />
 					</PronounsText>;
 				})
 			}
@@ -147,7 +147,7 @@ const NameplateBox = styled.div<{ $show: boolean, $visible: boolean, $active: bo
 
 	${(props) => {
 		if(props.$active) {
-			return css`animation: ${props.$animLength}ms linear 0s ${props.$show ? ShowNameplate : HideNameplate} forwards;`	
+			return css`animation: ${props.$animLength}ms linear 0s ${props.$show ? ShowNameplate : HideNameplate} forwards;`
 		}
 		else {
 			return css`animation: none;`
@@ -170,7 +170,7 @@ const Pronouns = styled.div`
 
 	bottom: -50px;
 	right: -80px;
-	
+
 	justify-content: center;
 	align-items: center;
 

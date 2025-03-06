@@ -1005,7 +1005,7 @@ const TeamScoreBox = ({ team, score, left })=>{
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: team,
-        font: "Splatoon",
+        font: "MainFont",
         align: left ? "left" : "right",
         maxWidth: 470,
         __source: {
@@ -1023,7 +1023,7 @@ const TeamScoreBox = ({ team, score, left })=>{
         __self: undefined
     }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _fittedText.FittedText), {
         text: `${score}`,
-        font: "Splatoon",
+        font: "MainFont",
         align: "center",
         maxWidth: 95,
         __source: {

@@ -18,13 +18,13 @@ export const GameCommentatorInfoBox: React.FC<GameCommentatorInfoBoxProps> = ({ 
 		<CommentatorBox>
 			<CommentatorName>
 				<CarouselComponent speed={10000} playing={playing}>
-					<FittedText text={name} font="Splatoon" align="left" maxWidth={pronouns !== "" ? nameWidth : fullWidth}  />
-					{tag !== "" && <FittedText text={tag} font="Splatoon" align="left" maxWidth={pronouns !== "" ? nameWidth : fullWidth}  />}
+					<FittedText text={name} font="MainFont" align="left" maxWidth={pronouns !== "" ? nameWidth : fullWidth}  />
+					{tag !== "" && <FittedText text={tag} font="MainFont" align="left" maxWidth={pronouns !== "" ? nameWidth : fullWidth}  />}
 				</CarouselComponent>
 			</CommentatorName>
-			{pronouns !== "" && 
+			{pronouns !== "" &&
 			<CommentatorPronouns>
-				<FittedText text={pronouns} font="Splatoon" align="left" maxWidth={pronounsWidth} />
+				<FittedText text={pronouns} font="MainFont" align="left" maxWidth={pronounsWidth} />
 			</CommentatorPronouns>
 			}
 		</CommentatorBox>
