@@ -848,131 +848,48 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styledComponents = require("styled-components");
 var _styledComponentsDefault = parcelHelpers.interopDefault(_styledComponents);
-const BACKGROUND_PATH = "/bundles/chishoals-layouts/images/backgrounds";
-const DEFAULT_COLOR = "var(--theme-bg)";
-const BACKGROUND_CATS = [
-    {
-        weight: 0.7,
-        backgrounds: [
-            {
-                image: "bg_ika.png"
-            },
-            {
-                image: "bg_octo.png"
-            },
-            {
-                image: "bg_ika_octo.png"
-            }
-        ]
-    },
-    {
-        weight: 0.3,
-        backgrounds: [
-            {
-                image: "bg_pixelnpc.png",
-                size: "50%"
-            },
-            {
-                image: "bg_jelleton.png",
-                size: "50%"
-            },
-            {
-                image: "bg_shooter.png",
-                size: "100%"
-            },
-            {
-                image: "bg_charger.png",
-                size: "75%"
-            },
-            {
-                image: "bg_blaster.png",
-                size: "50%"
-            },
-            {
-                image: "bg_slosher.png",
-                size: "50%"
-            },
-            {
-                image: "bg_dualies.png",
-                size: "50%"
-            },
-            {
-                image: "bg_splatling.png",
-                size: "50%"
-            },
-            {
-                image: "bg_roller.png",
-                size: "50%"
-            },
-            {
-                image: "bg_brella.png",
-                size: "50%"
-            },
-            {
-                image: "bg_splatana.png",
-                size: "50%"
-            },
-            {
-                image: "bg_stringer.png",
-                size: "50%"
-            },
-            {
-                image: "bg_brush.png",
-                size: "50%"
-            },
-            {
-                image: "bg_main.png",
-                size: "75%"
-            }
-        ]
-    }
-];
-const GetRandomBackground = ()=>{
-    let random = Math.random();
-    let category = 0;
-    BACKGROUND_CATS.forEach((item, index)=>{
-        if (random <= 0) return;
-        random = random - item.weight;
-        if (random <= 0) category = index;
-    });
-    return BACKGROUND_CATS[category].backgrounds[Math.floor(Math.random() * BACKGROUND_CATS[category].backgrounds.length)];
-};
-const Background = ({ backgroundColor })=>{
-    const [randomBackground] = (0, _react.useState)(GetRandomBackground());
+const Background = ()=>{
     return /*#__PURE__*/ (0, _reactDefault.default).createElement(StyledBackground, {
-        $backgroundColor: backgroundColor ? backgroundColor : DEFAULT_COLOR,
-        src: `${BACKGROUND_PATH}/${randomBackground.image}`,
-        $size: randomBackground.size,
         __source: {
             fileName: "src/graphics/components/Background.tsx",
-            lineNumber: 66,
+            lineNumber: 7,
             columnNumber: 3
         },
         __self: undefined
-    });
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement(StyledVideo, {
+        autoPlay: true,
+        muted: true,
+        loop: true,
+        __source: {
+            fileName: "src/graphics/components/Background.tsx",
+            lineNumber: 8,
+            columnNumber: 4
+        },
+        __self: undefined
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("source", {
+        src: "/bundles/chishoals-layouts/images/backgrounds/Background.webm",
+        type: "video/webm",
+        __source: {
+            fileName: "src/graphics/components/Background.tsx",
+            lineNumber: 9,
+            columnNumber: 5
+        },
+        __self: undefined
+    })));
 };
 const StyledBackground = (0, _styledComponentsDefault.default).div`
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	padding: 0px;
-
-	background-size: ${({ $size })=>$size ? $size : "10%"};
-	background-repeat: repeat;
-	background-image: url(${(props)=>props.src});
-	background-color: ${({ $backgroundColor })=>$backgroundColor};
-	background-attachment: scroll;
-
-    animation: scrolling 90s linear infinite;
-
-	@keyframes scrolling {
-  	from{
-      	background-position: 1920px 1920px;
-  	}
-  	to{
-      	background-position: 0 0;
-  	}
-	}
+	margin: 0px;
+`;
+const StyledVideo = (0, _styledComponentsDefault.default).video`
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	vertical-align: top;
 `;
 
 },{"react":"bH1AQ","styled-components":"9xpRL","@parcel/transformer-js/src/esmodule-helpers.js":"hvLRG"}],"6sL9p":[function(require,module,exports) {
